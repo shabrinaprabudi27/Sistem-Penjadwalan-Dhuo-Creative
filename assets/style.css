@@ -1,0 +1,32 @@
+
+:root{
+  --sidebar-w: 260px;
+}
+body{ background:#f6f7fb; }
+.sidebar{
+  width: var(--sidebar-w);
+  min-height: 100vh;
+  position: fixed;
+  top:0; left:0;
+  background: #111827;
+  color:#e5e7eb;
+}
+.sidebar a{ color:#e5e7eb; text-decoration:none; }
+.sidebar .nav-link{ border-radius: 10px; padding:.55rem .75rem; }
+.sidebar .nav-link:hover{ background: rgba(255,255,255,.08); }
+.sidebar .nav-link.active{ background: rgba(255,255,255,.12); }
+.main{
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+}
+.topbar{
+  position: sticky;
+  top:0;
+  z-index: 100;
+  background: rgba(246,247,251,.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.card-soft{ border: 1px solid rgba(0,0,0,.06); border-radius: 16px; }
+.table thead th{ background:#f1f5f9; }
+.badge-soft{ background:#eef2ff; color:#3730a3; }
