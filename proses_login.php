@@ -23,7 +23,7 @@ try {
   $_SESSION['user_id'] = (int)$row['user_id'];
   $_SESSION['username'] = $row['username'];
   $_SESSION['nama'] = $row['nama'];
-  go('dashboard.php');
+  go('index.php');
 } catch (Throwable $e) {
   go('login.php?err=1');
 }
